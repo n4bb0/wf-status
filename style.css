@@ -1,0 +1,270 @@
+html {
+  font-size: 16px;
+}
+
+body {
+  /*padding-top: 56px;*/ /*56px is the height of the navbar, activate this if the navbar is fixed*/
+  background-color: #edf0f4;
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.8em;
+  overflow: visible;
+}
+
+
+
+/* ---navbar--- */
+#navbarLinks {
+  font-size: 1rem;
+}
+
+#navbarLinks li > a {
+  color: #cecece;
+}
+
+.dropdown-menu {
+  min-width: 8rem;
+}
+
+a {
+  color: #476e99;
+}
+/* ---end navbar--- */
+
+
+
+/* ---modal--- */
+#info-modal {
+display: none;
+position: fixed;
+z-index: 11;
+left: 0;
+top: 0;
+height: 100%;
+width: 100%;
+overflow: hidden;
+background-color: rgba(0, 0, 0, 0.7);
+}
+
+#modal-content {
+position: relative;
+background-color:  #edf0f4;
+margin: 150px auto;
+padding: 30px;
+width: 80%;
+box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.3), 0 7px 20px 0 rgba(0, 0, 0, 0.3);
+}
+
+.icon#github {
+  width: 25px;
+}
+
+#modal-close {
+position: absolute;
+top: 0;
+right: 10px;
+float: right;
+font-size: 30px;
+cursor: pointer;
+}
+
+#modal-close:hover {
+color: #595959;
+}
+/* ---end modal--- */
+
+
+
+.platform-active {
+  background-color: #cacddd;
+}
+
+.missionType {
+  padding: 10px 5px;
+  border-bottom: 5px solid #343a40;
+}
+
+.missionType ul {
+  list-style-type: none;
+  padding: 5px 20px;
+  margin: 5px;
+  border: 1px solid grey;
+}
+
+.title {
+  text-align: center;
+  padding-top: 5px;
+  margin: 0;
+}
+
+.align-center {
+  text-align: center;
+}
+
+#fissures ul, #news ul {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+#fissures li, #news li {
+  padding: 5px 20px;
+  margin: 5px;
+  border: 1px solid grey;
+}
+
+.fissureInfo {
+  border: 1px solid black;
+  width: 70%;
+}
+
+#newsBtn {
+  text-align: center;
+  width: 100%;
+  -webkit-border-radius: 5;
+  -moz-border-radius: 5;
+  border-radius: 5px;
+  color: white;
+  background-color: #343a40;
+  text-decoration: none;
+  padding: 5px 20px;
+  margin-bottom: 5px;
+}
+
+#alerts-news {
+  padding: 0;
+  margin: 0;
+}
+
+.item {
+  font-weight: bold;
+}
+
+.time {
+  color: #fff;
+  font-weight: bold;
+  background-color: #343a40;
+  letter-spacing: 0.5px;
+  padding: 1px 10px;
+  -webkit-border-radius: 5;
+  -moz-border-radius: 5;
+  border-radius: 15px;
+}
+
+.cetusDayNight {
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+
+
+/* ---void trader--- */
+#voidTraderInfo {
+  list-style-type: none;
+  padding: 5px 20px;
+  margin: 5px;
+  border: 1px solid grey;
+}
+
+#inventoryBtn {
+  -webkit-border-radius: 5;
+  -moz-border-radius: 5;
+  border-radius: 5px;
+  color: white;
+  background-color: #343a40;
+  text-decoration: none;
+  padding: 5px 20px;
+  margin-bottom: 5px;
+}
+
+#voidTraderInventory {
+  margin: 5px;
+}
+
+#voidTraderInventory table {
+  border: 1.5px solid grey;
+  table-layout: fixed;
+  width: 100%;
+}
+
+#voidTraderInventory table thead th:first-child {
+  width: 65%;
+}
+
+#voidTraderInventory table thead th:nth-child(2) {
+  width: 15%;
+}
+
+#voidTraderInventory table thead th:last-child {
+  width: 20%;
+}
+
+#voidTraderInventory table th, td {
+  padding: 2px 5px;
+}
+
+#voidTraderInventory table tbody tr:nth-child(odd) {
+  background-color: #cacddd;
+}
+/* ---end void trader--- */
+
+
+
+/* ---fomorian and razorback--- */
+#fomoRazorRow {
+  padding: 5px 20px;
+}
+
+.fomoRazor {
+  overflow:hidden;
+  border: 1px solid grey;
+}
+
+.fomoRazorDiv {
+  position:relative;
+  display:inline-block;
+  width:70px;
+  height:70px;
+  padding:0;
+  float: right;
+}
+
+.fomoRazorCanvas {
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+}
+
+.fomoRazorId {
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+}
+/* ---end fomorian and razorback--- */
+
+
+
+/*some tabs' content can be so long it moves the timer down on small screens*/
+.widthLimit {
+  display: inline-block;
+  width: 65%;
+}
+
+@media (min-width: 472px) {
+  .widthLimit {
+    width: 75%;
+  }
+}
+
+@media (min-width: 768px) {
+  .widthLimit {
+    width: 65%;
+  }
+}
+
+@media (min-width: 992px) {
+  .widthLimit {
+    width: auto;
+  }
+}

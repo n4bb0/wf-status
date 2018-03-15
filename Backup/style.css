@@ -1,0 +1,224 @@
+html {
+  font-size: 16px;
+}
+
+body {
+  /*padding-top: 56px;*/ /*56px is the height of the navbar, activate this if the navbar is fixed*/
+  background-color: #edf0f4;
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.8em;
+  overflow: visible;
+}
+
+#navbarLinks {
+  font-size: 1rem;
+}
+
+a {
+  color: #476e99;
+}
+
+.borderr {
+  border: 1px solid black;
+}
+
+.platform {
+  text-align: center;
+  height: 40px;
+  border-left: 1px solid #343a40;
+  border-right: 1px solid #343a40;
+  border-bottom: 5px solid #343a40;
+}
+
+.platform div {
+  border: 1px solid #343a40;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.platform-active {
+  background-color: #cacddd;
+}
+
+.missionType {
+  padding: 10px 5px;
+  border-bottom: 5px solid #343a40;
+}
+
+.missionType ul {
+  list-style-type: none;
+  padding: 5px 20px;
+  margin: 5px;
+  border: 1px solid grey;
+}
+
+.title {
+  text-align: center;
+  padding-top: 5px;
+  margin: 0;
+}
+
+.align-center {
+  text-align: center;
+}
+
+#fissures ul, #news ul {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+#fissures li, #news li {
+  padding: 5px 20px;
+  margin: 5px;
+  border: 1px solid grey;
+}
+
+.fissureInfo {
+  border: 1px solid black;
+  width: 70%;
+}
+
+#voidTraderInfo {
+  list-style-type: none;
+  padding: 5px 20px;
+  margin: 5px;
+  border: 1px solid grey;
+}
+
+#inventoryBtn {
+  -webkit-border-radius: 5;
+  -moz-border-radius: 5;
+  border-radius: 5px;
+  color: white;
+  background-color: #343a40;
+  text-decoration: none;
+  padding: 5px 20px;
+  margin-bottom: 5px;
+}
+
+#voidTraderInventory {
+  margin: 5px;
+}
+
+#voidTraderInventory table {
+  border: 1.5px solid grey;
+  table-layout: fixed;
+  width: 100%;
+}
+
+#voidTraderInventory table thead th:first-child {
+  width: 65%;
+}
+
+#voidTraderInventory table thead th:nth-child(2) {
+  width: 15%;
+}
+
+#voidTraderInventory table thead th:last-child {
+  width: 20%;
+}
+
+#voidTraderInventory table th, td {
+  padding: 2px 5px;
+}
+
+#voidTraderInventory table tbody tr:nth-child(odd) {
+  background-color: #cacddd;
+}
+
+#newsBtn {
+  text-align: center;
+  width: 100%;
+  -webkit-border-radius: 5;
+  -moz-border-radius: 5;
+  border-radius: 5px;
+  color: white;
+  background-color: #343a40;
+  text-decoration: none;
+  padding: 5px 20px;
+  margin-bottom: 5px;
+}
+
+#alerts-news {
+  padding: 0;
+  margin: 0;
+}
+
+/* fomorian and razorback */
+#fomoRazorRow {
+  padding: 5px 20px;
+}
+
+.fomoRazor {
+  overflow:hidden;
+  border: 1px solid grey;
+}
+
+.fomoRazorDiv {
+  position:relative;
+  display:inline-block;
+  width:70px;
+  height:70px;
+  padding:0;
+  float: right;
+}
+
+.fomoRazorCanvas {
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+}
+
+.fomoRazorId {
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+}
+
+.item {
+  font-weight: bold;
+}
+
+.time {
+  color: #fff;
+  font-weight: bold;
+  background-color: #343a40;
+  letter-spacing: 0.5px;
+  padding: 1px 10px;
+  -webkit-border-radius: 5;
+  -moz-border-radius: 5;
+  border-radius: 15px;
+}
+
+.cetusDayNight {
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+/*some tabs' content can be so long it shifts the timer down on small screens*/
+.widthLimit {
+  display: inline-block;
+  width: 65%;
+  /*background-color: grey;*/
+}
+
+@media (min-width: 472px) {
+  .widthLimit {
+    width: 75%;
+  }
+}
+
+@media (min-width: 768px) {
+  .widthLimit {
+    width: 65%;
+  }
+}
+
+@media (min-width: 992px) {
+  .widthLimit {
+    width: auto;
+  }
+}
