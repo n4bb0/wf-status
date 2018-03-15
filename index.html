@@ -15,14 +15,15 @@
   <link rel="stylesheet" type=" text/css" href="style.css" />
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script> <!--required for bootstrap-->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
 </head>
 
 <body>
+
+  <!--navbar-->
   <nav class="navbar  navbar-expand-sm navbar-dark bg-dark">
     <a class="navbar-brand" href="#">Hello World!</a>
-
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarLinks">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -42,31 +43,22 @@
       </ul>
     </div>
   </nav>
+  <!--end navbar-->
+
+
 
   <div id="info-modal">
     <div id="modal-content">
       <span id="modal-close">&times</span>
       <p>This page shows informations about the events currently happening in <a href="https://www.warframe.com/" target="_blank">warframe<a>.</p>
       <p>It's a little project I made to practice my coding skills and, as such, I coded every feature myself, and I purposely avoided using any javascript plugin.</p>
-      <p>You can find the code for this page on GitHub <a href="#"><img class="icon" id="github" src="img/icons/github.svg"></a></p>
-      <!--<p>You can contact me at <a href="mailto:marco.bosa991@gmail.com">marco.bosa991@gmail.com</a></p> -->
+      <p>You can find the code for this page on GitHub <a href="https://github.com/n4bb0/wf-status" target="_blank"><img class="icon" id="github" src="img/icons/github.svg"></a></p>
     </div>
   </div>
 
+
+
   <div class="container">
-
-<!--    <div class="platform row align-items-center">
-      <div class="col-4 platform-active" id="pc">
-        <span>PC</span>
-      </div>
-      <div class="col-4" id="ps4">
-        <span>PS4</span>
-      </div>
-      <div class="col-4" id="xb1">
-        <span>Xbox</span>
-      </div>
-    </div>-->
-
     <div class="row">
       <div class="col-md-6" id="alerts-news">
         <div class="missionType" id="alerts">
@@ -86,6 +78,7 @@
         <p class="align-center">There are currently <span></span> invasions</p>
       </div>
     </div> <!--end first row-->
+
     <div class="row">
       <div class="missionType col-md-6" id="fissures">
         <h4 class="title">Void Fissures</h4>
@@ -112,6 +105,7 @@
         </ul>
       </div>
     </div> <!--end second row-->
+
     <div class="row">
       <div class="missionType col-md-6" id="voidTrader">
         <h4 class="title">Void Trader</h4>
@@ -125,6 +119,7 @@
         </ul>
       </div>
     </div> <!--end third row-->
+
     <div class="row">
       <div class="missionType col-md-6" id="cetusTime">
         <h4 class="title">Time in Cetus</h4>
@@ -141,9 +136,10 @@
         </div>
       </div>
     </div> <!--end fourth row-->
+
   </div>
 
-  <script src="main.js"></script>     <!-- can be written in both <head> or <body>, placing scripts at the bottom of the <body> improves the display speed, because scripts slow down the display. -->
+  <script src="main.js"></script>
 </body>
 
 </html>
